@@ -1,0 +1,28 @@
+{
+  "name": "content-muse-ai-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered web application for generating content ideas for blogs, videos, and social media",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start:frontend": "npm run start --workspace=frontend",
+    "start:backend": "npm run start --workspace=backend",
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run start --workspace=frontend\"",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend"
+  },
+  "keywords": [
+    "content",
+    "ai",
+    "generator",
+    "marketing",
+    "social media"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
